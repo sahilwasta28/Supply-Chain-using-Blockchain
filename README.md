@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+**📦 Blockchain-Based Supply Chain Management DApp**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A decentralized application (DApp) designed to improve transparency, traceability, and trust in supply chain systems using blockchain technology. Built with Solidity smart contracts on the Ethereum Sepolia testnet and a React.js frontend integrated with MetaMask, this system records and verifies every stage of a product’s journey—from manufacturer to customer.
 
-## Available Scripts
+**🔧 Technologies Used**
 
-In the project directory, you can run:
+Blockchain Network: Ethereum Sepolia Testnet
 
-### `npm start`
+Smart Contract Language: Solidity
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+IDE: Remix IDE (for writing and deploying smart contracts)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Frontend Framework: React.js
 
-### `npm test`
+Blockchain Interaction: ethers.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Wallet Integration: MetaMask
 
-### `npm run build`
+Development Server: http://localhost:3000/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**🛠️ How It Works**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application includes three user roles with the following responsibilities:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🏭 Manufacturer
 
-### `npm run eject`
+1.	Add and view products
+2.	Add Retailers to the network
+3.	Ship products in bulk and track shipping history
+   
+🏪 Retailer
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.	Place bulk orders to Manufacturers using ETH
+2.	Manage product inventory
+3.	Handle Customer orders and deliveries with full tracking
+   
+👤 Customer
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.	Browse available products from Retailers
+2.	Place orders by paying in ETH
+3.	Track order status and view complete order history
+   
+All actions are recorded immutably on the blockchain to prevent tampering and ensure real-time transparency.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**🚀How to Run the Project**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1.	Clone the Repository
+   
+    git clone https://github.com/sahilwasta28/Supply-Chain-using-Blockchain.git
 
-## Learn More
+  	cd Supply-Chain-using-Blockchain
+2.	Install Dependencies                                                                                         
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  	npm install
+3.	Start the Development Server
+   
+    npm start
+    Runs on: http://localhost:3000
+5.	Set Up MetaMask
+    Install MetaMask browser extension
+    Connect to the Sepolia testnet
+    Fund wallet via Sepolia Faucet
+6.	Deploy Smart Contracts
+    Open Remix IDE
+    Paste and compile SupplyChain.sol
+    Deploy to Sepolia and copy the contract address & ABI
+7.	Update Frontend Configuration
+    Add your contract address and ABI in the frontend file
+  	
+**✅ Key Features**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.	Real-time product tracking
+2.	Decentralized ETH payment between stakeholders
+3.	Tamper-proof order and delivery records
+4.	Role-based functionality for Manufacturer, Retailer, and Customer
+   
+**📸 Screenshots** 
 
-### Code Splitting
+![image](https://github.com/user-attachments/assets/f03a9540-1129-416d-b99b-7200c5255df2)
+![image](https://github.com/user-attachments/assets/0c76f604-b004-4d6e-86d7-e301d91efb19)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contribute or fork the project. ⭐ Star the repo if you found it helpful!
